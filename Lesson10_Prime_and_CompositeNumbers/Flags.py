@@ -6,6 +6,11 @@ def solution(A):
         if(A[i-1] < A[i] > A[i+1]):
             peak.append(i)
     #print(peak)
+
+    # If no peaks exist, no flags can be placed
+    if not peak:
+        return 0
+    
     
 
     # Binary Search to for finding peaks and placiing of the flags
